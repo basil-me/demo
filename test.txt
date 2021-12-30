@@ -1,2 +1,5 @@
-This is my test file
-done!!!
+<<<<< HEAD
+Basil
+dddddddddddddddddddddd
+iThis is my test file
+=======
