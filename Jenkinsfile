@@ -14,7 +14,7 @@ pipeline {
                                  remote.identityFile = reactapp-store
                                  stage("Git clone and Rsync") {
                                      sshCommand remote: remote, command: 'sudo git clone https://github.com/basil-me/demo.git'
-                                     sshCommand remote: remote, command:  date
+                                     sshCommand remote: remote, command:  date & time 
                                  }
                                                               
                            }
