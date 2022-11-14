@@ -9,7 +9,7 @@ pipeline {
                          remote.host = "10.0.0.158"
                          remote.port = 22
                          remote.allowAnyHosts = true
-                         withCredentials([sshUserPrivateKey(credentialsId: 'reactapp-store', keyFileVariable: 'reactapp-store', usernameVariable: 'ubuntu')]){
+                         withCredentials([sshUserPrivateKey(credentialsId: 'reactapp-store', keyFileVariable: 'reactapp-store', usernameVariable: 'reactapp-store')]){
                                  remote.user = ubuntu
                                  remote.identityFile = reactapp-store
                                  stage("Git clone and Rsync") {
